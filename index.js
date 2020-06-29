@@ -216,13 +216,13 @@ const artists = [
 Use an array method to fix this issue and console.log() to check your work. */
 
   console.log("Task 2 Answer:");
-    function rename(newName) {
-      for (let i = 0; i < artists.length; i++) {
-          console.log(artists[i].name = newName);
-      }
-    }
-    rename("Vincent Van Gogh");
-    // rename("Emedeo Modigliani");
+    // function rename(newName) {
+    //   for (let i = 0; i < artists.length; i++) {
+    //       console.log(artists[i].name = newName);
+    //   }
+    // }
+    // rename("Vincent Van Gogh");
+    // // rename("Emedeo Modigliani");
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -235,16 +235,16 @@ Use an array method to fix this issue and console.log() to check your work. */
 */
 
 console.log("Task 3 Answer:");
-function getArtistByIndex(artists, index) {
-    for (i = 0; i < artists.length; i++) {
-      // if (index == array[i]) {
-        console.log(artists[i].name);
-      // }
-    }
-  }
-   getArtistByIndex(artists, artists[3]);
-
-
+  // function getArtistByIndex(array, index) {
+  //     for (i = 0; i < array.length; i++) {
+  //       if (index == array[i]) {
+  //         console.log(array[i].name);
+  //       }
+  //     }
+  //   }
+  //   getArtistByIndex(artists, artists[3]);
+  // getArtistByIndex(artists, artists[7]);
+   
   /**
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born
  in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not 
