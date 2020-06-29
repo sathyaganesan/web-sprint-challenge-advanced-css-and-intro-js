@@ -276,12 +276,12 @@ console.log("Task 4 Answer:");
 console.log("Task 5 Answer:");
 function removeArtist(array, indexNum) {
   for (let i = 0; i < array.length; i++) {
-    if (indexNum == array[i].id) {
+    // if (indexNum == array[i].id) {
       console.log(array.splice([i], 0), array.length);
-    }
+    // }
   }
 }
-removeArtist(artists, artists[1]);
+// removeArtist(artists, artists[1]);
 
   
 /**
@@ -364,11 +364,11 @@ function getHTML(/* Code here */){
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+function randomize(){
 
-    /* Code here */
-
+   
   }
+  randomize();
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
