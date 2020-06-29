@@ -216,13 +216,13 @@ const artists = [
 Use an array method to fix this issue and console.log() to check your work. */
 
   console.log("Task 2 Answer:");
-    // function rename(newName) {
-    //   for (let i = 0; i < artists.length; i++) {
-    //       console.log(artists[i].name = newName);
-    //   }
-    // }
-    // rename("Vincent Van Gogh");
-    // // rename("Emedeo Modigliani");
+  //   function rename(newName) {
+  //     for (let i = 0; i < artists.length; i++) {
+  //         console.log(artists[i].name = newName);
+  //     }
+  //   }
+  //   rename("Vincent Van Gogh");
+    // rename("Emedeo Modigliani");
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -236,7 +236,7 @@ Use an array method to fix this issue and console.log() to check your work. */
 
 console.log("Task 3 Answer:");
   // function getArtistByIndex(array, index) {
-  //     for (i = 0; i < array.length; i++) {
+  //     for (let i = 0; i < array.length; i++) {
   //       if (index == array[i]) {
   //         console.log(array[i].name);
   //       }
@@ -250,11 +250,15 @@ console.log("Task 3 Answer:");
  in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not 
  included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
-
-  /* Code here */
-
-}
+console.log("Task 4 Answer:");
+  // function get20s() {
+  //   for (let i = 0; i < artists.length; i++) {
+  //     if (artists[i].years >= 1900 && artists[i].years <= 2000) {
+  //       console.log(artists[i].name);
+  //     }
+  //   }
+  // }
+  // get20s();
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -265,16 +269,24 @@ function get20s(/* Code here */){
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+ * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously 
+ * remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
- 
 
+console.log("Task 5 Answer:");
+function removeArtist(array, indexNum) {
+  for (let i = 0; i < array.length; i++) {
+    if (indexNum == array[i].id) {
+      console.log(array.splice([i], 0), array.length);
+    }
+  }
+}
+removeArtist(artists, artists[1]);
+
+  
 /**
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. 
+Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 20,
@@ -286,11 +298,19 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+console.log("Task 6 Answer:");
+  function addArtist() {
+    artists.splice(20, 0,
+      id = "20",
+      name = "Sathya Ganesan",
+      years = "1983 - 2020",
+      genre = "Web Design",
+      nationality = "Indian",
+      bio = "Something something");
+    }
+    console.log(artists);
+    addArtist();
 
-    /* Code here */
-
-  }
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -300,12 +320,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
 
-  /* Code here */
-
-}
-
+console.log("Task 7 Answer:");
+  function lotsOfArt(artists){
+    for (let i = 0; i < artists.length; i++) {
+      if (artists[i].paintings > 100) {
+        console.log(artists[i].name);
+      }
+    }    
+  }
+  lotsOfArt(artists)
 
 
 // 🎨🎨 STRETCH 🎨🎨//
