@@ -207,11 +207,22 @@ const artists = [
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
+  console.log("Task 1a Answer:");
+  console.log("Name:", artists[0].name);
+  console.log("Task 1b Answer:");
+  console.log("Bio:",artists[3].bio);
 
+/* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. 
+Use an array method to fix this issue and console.log() to check your work. */
 
-
-/* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
+  console.log("Task 2 Answer:");
+    function rename(newName) {
+      for (let i = 0; i < artists.length; i++) {
+          console.log(artists[i].name = newName);
+      }
+    }
+    rename("Vincent Van Gogh");
+    // rename("Emedeo Modigliani");
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -222,14 +233,22 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(array, index) {
-    /* code here */
+
+console.log("Task 3 Answer:");
+function getArtistByIndex(artists, index) {
+    for (i = 0; i < artists.length; i++) {
+      // if (index == array[i]) {
+        console.log(artists[i].name);
+      // }
+    }
   }
-  
+   getArtistByIndex(artists, artists[3]);
+
+
   /**
-
-
-/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born
+ in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not 
+ included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/* Code here */){
 
