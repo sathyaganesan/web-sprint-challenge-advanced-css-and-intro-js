@@ -216,12 +216,12 @@ const artists = [
 Use an array method to fix this issue and console.log() to check your work. */
 
   console.log("Task 2 Answer:");
-  //   function rename(newName) {
-  //     for (let i = 0; i < artists.length; i++) {
-  //         console.log(artists[i].name = newName);
-  //     }
-  //   }
-  //   rename("Vincent Van Gogh");
+    // function rename(newName) {
+    //   for (let i = 0; i < artists.length; i++) {
+    //       console.log(artists[i].name = newName);
+    //   }
+    // }
+    // rename("Vincent Van Gogh");
     // rename("Emedeo Modigliani");
 
 
@@ -251,14 +251,14 @@ console.log("Task 3 Answer:");
  included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 console.log("Task 4 Answer:");
-  // function get20s() {
-  //   for (let i = 0; i < artists.length; i++) {
-  //     if (artists[i].years >= 1900 && artists[i].years <= 2000) {
-  //       console.log(artists[i].name);
-  //     }
-  //   }
-  // }
-  // get20s();
+  function get20s() {
+    for (let i = 0; i < artists.length; i++) {
+      if (artists[i].years.startsWith(19) && artists[i].years.startsWith(19)) {
+        console.log(artists[i].name);
+      }
+    }
+  }
+  get20s();
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
