@@ -137,10 +137,18 @@ button:hover{
 
 @media (max-width: 500px) {
 
+    h1{
+        font-size:5rem;
+    }
+
     a {	
         font-size:1.5rem;
     }
-    
+
+    nav span{
+        border-left:1px solid #626262;
+    }
+
     .title-container{
         width: 100%;
     }
@@ -155,10 +163,10 @@ button:hover{
     }
 
     .artists-container{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .artist{
-        width:90%;
+        width: 70%;
     }
 }
