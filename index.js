@@ -224,6 +224,17 @@ Use an array method to fix this issue and console.log() to check your work. */
     // rename("Vincent Van Gogh");
     // rename("Emedeo Modigliani");
 
+    function rename(array, index, newName) {
+      for (let i = 0; i < array.length; i++) {
+        index = array.length - 1;
+        if (index == array[i]) {
+        array[i].name = newName;
+        }
+      }
+      console.log(newName);
+    }
+       rename(artists, 9, "Vincent Van Gogh");
+
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -238,7 +249,7 @@ console.log("Task 3 Answer:");
   function getArtistByIndex(array, index) {
       for (let i = 0; i < array.length; i++) {
         if (index == array[i]) {
-          console.log("The artist at index", artists[i], array[i].name);
+          console.log("The artist at index", array[i]);
         }
       }
     }
@@ -251,18 +262,7 @@ console.log("Task 3 Answer:");
  included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 console.log("Task 4 Answer:");
-    function get20s() {
-      let yearsArray = [];
-      for (let i = 0; i < artists.length; i++) {
-        splitArray = artists[i].years.split("-");
-        if (splitArray[0] > 1400 && splitArray[1] > 1500) {
-          yearsArray = splitArray;
-        }
-      }
-      console.log(yearsArray);
-    }
-    get20s()
-    
+   
   // function get20s() {
   //   for (let i = 0; i < artists.length; i++) {
   //     if (artists[i].years.startsWith(19) && artists[i].years.startsWith(19)) {
@@ -272,6 +272,17 @@ console.log("Task 4 Answer:");
   // }
   // get20s();
 
+  function get20s() {
+    let yearArray = [];
+    for (let i = 0; i < artists.length; i++) {
+      splitArray = artists[i].years.split("-");
+      yearArray = splitArray
+      if(yearArray[0] > 1900 && yearArray[1] < 2000) {
+        console.log(yearArray, artists[i].name);
+      }
+    }
+  }
+  get20s();
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -383,7 +394,8 @@ function getHTML(/* Code here */){
 
 function randomize(artistArray){
     let random = Math.random(artistArray);
-    let newArray = artistArray.push(artistArray[random]);
+    let newArray = []
+    newArray = artistArray.push(artistArray[random]);
     console.log(newArray);   
   }
   randomize(artists);
